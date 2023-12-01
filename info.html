@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Contries</title>
+</head>
+<body>
+    <header class="sait-header p-2">
+        <div class="container">
+            <div class="sait-header__wrapper d-flex justify-content-between align-items-center">
+                <h1 class="sait-header__title mt-0 fs-3">Where in the world?</h1>
+                <span class="d-inline" id="moon"></span>
+                <button class="nav__darkmood--style nav__darkmood"><img class="dark__moon" src="./imges/moon.svg" alt="" id="moon-icon"></button>  
+            </div>
+            
+        </div>
+    </header>
+    <main class="sait-main">
+        <section class="info">
+            <div class="container">
+                <div class="info__headeing">
+                    <button class="info__btn info__btn--js d-block">Back</button>
+                    <div class="info__wrapping">
+                        
+                    </div>
+                </div>
+                
+                <template class="info__template">
+                        <img class="info__img info__img--js" src="" alt="">
+                    <div class="info__box">
+                        <h2 class="info__title info__title--js"></h2>
+                        <div class="info__main">
+                            <div class="info__first">   
+                                <p class="info__name info__name--js"></p>
+                                <p class="info__population info__population--js"></p>
+                                <p class="info__region info__region--js"></p>
+                                <p class="info__subregion info__subregion--js"></p>
+                                <p class="info__capital info__capital--js"></p>
+                            </div>   
+                            <div class="info__secondary">
+                                <p class="info__status info__status--js"></p>
+                                <p class="info__currencies info__currencies--js"></p>
+                                <p class="info__languages info__languages--js"></p>   
+                                <p class="info__timezones info__timezones--js"></p>   
+                                <p class="info__fifa info__fifa--js"></p>   
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                </template>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./info.js"></script>
+</body>
+</html>

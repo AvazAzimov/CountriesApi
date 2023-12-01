@@ -1,0 +1,217 @@
+:root {
+    --header--background-color:#f6f6f6;
+    --body-background-color:#fff;
+    --text-color:#000;
+    --line-color:#000;
+    --card-color:#fff;
+    --shodow-color:#223c5033;
+    
+}
+.darkmood-theme {
+    --header--background-color:#3a3a3a;
+    --body-background-color:#303030;
+    --text-color:#fff;
+    --line-color:#fff;
+    --card-color:#303030;
+    --shodow-color:#96969633;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: var(--body-background-color);
+}
+.sait-header {
+    background-color: var(--header--background-color);
+}
+.sait-header__title {
+    color: var(--text-color);
+}
+.nav__darkmood--style {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.dark__moon {
+    width: 30px;
+    height: 30px;
+}
+.hero {
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+.hero__input {
+    width: 300px;
+    padding: 5px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--line-color);
+    border-radius: 5px;
+    box-shadow: 4px 6px 26px -3px var(--shodow-color);
+    outline: none;
+}
+::placeholder {
+    color: var(--text-color);
+}
+.hero__select  {
+    width: 300px;
+    padding: 6px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--line-color);
+    border-radius: 5px;
+    box-shadow: 4px 6px 26px -3px var(--shodow-color);
+    outline: none;
+}
+
+.hero__btn {
+    width: 100px;
+    padding: 4px;
+    background-color: transparent;
+    border: 1px solid #28282e;
+    border-radius: 5px;
+    box-shadow: 4px 6px 26px -3px #223c5033;
+}
+.countries__list {
+    display: flex;
+    /* justify-content:start; */
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.countries__item--style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 320px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    border-top: 1px solid transparent;
+    /* border: 1px solid #a6a6a6; */
+    box-shadow: 4px 6px 26px 6px var(--shodow-color);
+    
+}
+.countries__item--style:hover {
+    animation: aniname 0.5s linear  both;
+    box-shadow: 4px 6px 26px 20px var(--shodow-color);
+}
+.countries__img--style {
+    width: 250px;
+    height: 140px;
+    border-radius:10px 10px 0 0;
+}
+.countries__info--box  {
+    padding: 0 0 30px;
+}
+.countries__title--style {
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+.countries__people--style {
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: center;
+}
+.countries__region--style {
+    text-align: center;
+    color: var(--text-color);
+}
+.countries__capital--style {
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* info page */
+.info {
+    padding-top: 90px;
+}
+/* .info__headeing {
+    
+} */
+.info__btn {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 50px;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 1px solid var(--line-color);
+    border-radius: 5px;
+    box-shadow: 4px 6px 26px -3px var(--shodow-color);
+}
+.info__wrapping {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    
+}
+
+.info__img  {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 26px 16px var(--shodow-color);
+    
+}
+.info__main {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.info__title {
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+p {
+    margin-bottom: 10px;
+    
+}
+.info__name {
+    font-style: 16px;
+    color: var(--text-color);
+}
+.info__population {
+    color: var(--text-color);
+}
+.info__region {
+    color: var(--text-color);
+}
+.info__subregion {
+    color: var(--text-color);
+}
+.info__capital {
+    color: var(--text-color);
+}
+.info__status {
+    color: var(--text-color);
+}
+.info__currencies {
+    color: var(--text-color);
+}
+.info__languages {
+    color: var(--text-color);
+}
+.info__timezones {
+    color: var(--text-color);
+}
+.info__fifa {
+    color: var(--text-color);
+}
+
+
+
+@keyframes aniname {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}

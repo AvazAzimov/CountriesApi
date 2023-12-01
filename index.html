@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="sait-header p-2">
+        <div class="container">
+            <div class="sait-header__wrapper d-flex justify-content-between align-items-center">
+                <h1 class="sait-header__title mt-0 fs-3">Where in the world?</h1>
+                <span class="d-inline" id="moon"></span>
+                <button class="nav__darkmood--style nav__darkmood"><img class="dark__moon" src="./imges/moon.svg" alt="" id="moon-icon"></button>  
+            </div>
+            
+        </div>
+    </header>
+    <main class="sait-main">
+        <section class="hero">
+            <div class="container">
+                <form class="hero__form--js d-flex justify-content-center align-items-center gap-3">
+                    <input class="hero__input hero__input--js" type="text" placeholder="Desired country">
+                    <select class="hero__select hero__select--js">
+                        <option class="hero__select--js" value="">All</option>
+                        <option class="hero__select--js" value="Asia">Asia</option>
+                        <option class="hero__select--js" value="Africa">Africa</option>
+                        <option class="hero__select--js" value="Europe">Europe</option>
+                        <option class="hero__select--js" value="Oceania">Oceania</option>
+                        <option class="hero__select--js" value="North America">North America</option>
+                        <option class="hero__select--js" value="South America">South America</option>        
+                        <option class="hero__select--js" value="Antarctica">Antarctica</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <section class="countries">
+            <div class="container">
+                <div class="countries__wrapper">
+                    <ul class="countries__list countries__list--js list-unstyled">
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <template class="countries__template">
+            <li class="countries__item--style countries__item">
+                <img class="countries__img--style countries__img" src="" alt="">
+                <div class="countries__info--box d-flex flex-column gap-2">
+                    <h3 class="countries__title--style countries__title mb-0"></h3>
+                    <p class="countries__people--style countries__people mb-0"></p>
+                    <p class="countries__region--style countries__region mb-0"></p>
+                    <p class="countries__capital--style countries__capital "></p>
+                </div>
+            </li>
+        </template>
+        
+    </main>
+    
+    
+    <script src="./main.js"></script>
+</body>
+</html>
