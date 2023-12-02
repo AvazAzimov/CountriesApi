@@ -46,15 +46,20 @@ elForm.addEventListener("keyup",evt => {
     const inputVal = elInput.value;
     const selectVal = elSelect.value;
     console.log(selectVal);
-    if (selectVal) {
-        renderApi(`https://restcountries.com/v3.1/region/${selectVal}`)
-    }else if(inputVal) {
+     if(inputVal) {
         renderApi(`https://restcountries.com/v3.1/name/${inputVal}`)
     }else {
         renderApi(COUNTRIES__API)
     }
 })
-
+elSelect.addEventListener("change" ,() => {
+    const selectVal = elSelect.value;
+    if (selectVal) {
+        renderApi(`https://restcountries.com/v3.1/region/${selectVal}`)
+    }else {
+        renderApi(COUNTRIES__API)
+    }
+})
 elList.addEventListener("click" , ev => {
     if (ev.target.matches(".countries__item")) {
         const locationEvent = ev.target.dataset.contentId;
@@ -68,9 +73,6 @@ elList.addEventListener("click" , ev => {
 
 elDarkMoodBtn.addEventListener("click", (eve) => {
     eve.preventDefault()
-    // localStorage.setItem("dork",darkMoon)
-    // window.localStorage.setItem("token",eve)
-    // getSelection(darkMoon)
     elBody.classList.toggle("darkmood-theme");
     if (document.body.classList.contains("darkmood-theme")) {
         Imglitek.src = "/imges/sun.svg"
@@ -78,5 +80,8 @@ elDarkMoodBtn.addEventListener("click", (eve) => {
         Imglitek.src = "/imges/moon.svg" 
     }
 })
+
+
+
 const COUNTRIES__API = "https://restcountries.com/v3.1/all";
 renderApi(COUNTRIES__API)
