@@ -77,7 +77,7 @@ body {
 }
 .countries__list {
     display: flex;
-    /* justify-content:start; */
+    justify-content:center;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 30px;
